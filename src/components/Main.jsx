@@ -99,9 +99,6 @@ const Main = () => {
                     <h3>Revinue Status</h3>
                     <div className="flex justify-between items-center gap-2 py-3">
                         <div>
-                            <img src={icon1} alt="" />
-                        </div>
-                        <div>
                             <h4 className="text-4xl font-semibold">$ 432</h4>
                             <p>Jan 01 - Jan 10</p>
                         </div>
