@@ -74,6 +74,12 @@ const Main = () => {
                     <div className="absolute top-[39%] left-[50%] -translate-x-[50%] bg-[#60CDF6] rounded-full w-20 h-20 flex justify-center items-center">
                         <PiGraduationCapThin className='text-5xl text-white' />
                     </div>
+
+                    <div className="absolute top-[80%] left-[50%] flex gap-2 justify-center -translate-x-[50%]">
+                        <p className="text-2xl font-semibold">33%</p>
+                        <p className="text-2xl font-semibold">55%</p>
+                        <p className="text-2xl font-semibold">12%</p>
+                    </div>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-5">
