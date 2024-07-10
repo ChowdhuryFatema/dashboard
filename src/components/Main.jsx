@@ -185,7 +185,7 @@ const Main = () => {
                         <h2 className="font-bold text-xl">Order Status</h2>
                         <p>Overview of latest month</p>
                     </div>
-                    <div className="flex justify-between gap-5">
+                    <div className="md:flex justify-between gap-5 space-y-3">
                         <div className="flex gap-3">
                             <button className="bg-[#E45958] text-white btn hover:bg-[#c73b3b] px-3"><MdAlarmAdd size={20} />Add</button>
                             <button className="text-[#BDBDBD] bg-[#F2F2F2] flex items-center justify-center px-3 rounded-md"><MdDelete size={32} /></button>
@@ -204,42 +204,42 @@ const Main = () => {
                                 <th className="text-center">CUSTOMERS</th>
                                 <th className="text-center">FROM</th>
                                 <th className="text-center">PRICE</th>
-                                <th className="text-center">STATUS</th>
+                                <th className="hidden md:flex text-center">STATUS</th>
                             </tr>
                             <tr>
                                 <td className="text-center">12386</td>
                                 <td className="text-center">Charly dues</td>
                                 <td className="text-center">Russia</td>
                                 <td className="text-center">$2652</td>
-                                <td className="text-center"><button className="px-5 py-2 rounded-lg bg-[#EB4785] text-white">Process</button></td>
+                                <td className="text-center"><button className="hidden md:flex px-5 py-2 rounded-lg bg-[#EB4785] text-white">Process</button></td>
                             </tr>
                             <tr>
                                 <td className="text-center">12386</td>
                                 <td className="text-center">Charly dues</td>
                                 <td className="text-center">Russia</td>
                                 <td className="text-center">$2652</td>
-                                <td className="text-center"><button className="px-5 py-2 rounded-lg bg-[#875EC0] text-white">Process</button></td>
+                                <td className="text-center"><button className="hidden md:flex px-5 py-2 rounded-lg bg-[#875EC0] text-white">Process</button></td>
                             </tr>
                             <tr>
                                 <td className="text-center">12386</td>
                                 <td className="text-center">Charly dues</td>
                                 <td className="text-center">Russia</td>
                                 <td className="text-center">$2652</td>
-                                <td className="text-center"><button className="px-5 py-2 rounded-lg bg-[#46C5F3] text-white">Process</button></td>
+                                <td className="text-center"><button className="hidden md:flex px-5 py-2 rounded-lg bg-[#46C5F3] text-white">Process</button></td>
                             </tr>
                             <tr>
                                 <td className="text-center">12386</td>
                                 <td className="text-center">Charly dues</td>
                                 <td className="text-center">Russia</td>
                                 <td className="text-center">$2652</td>
-                                <td className="text-center"><button className="px-5 py-2 rounded-lg bg-[#5CF461] text-white">Process</button></td>
+                                <td className="text-center"><button className="hidden md:flex px-5 py-2 rounded-lg bg-[#5CF461] text-white">Process</button></td>
                             </tr>
                             <tr>
                                 <td className="text-center">12386</td>
                                 <td className="text-center">Charly dues</td>
                                 <td className="text-center">Russia</td>
                                 <td className="text-center">$2652</td>
-                                <td className="text-center"><button className="px-5 py-2 rounded-lg bg-[#FBB72C] text-white">Process</button></td>
+                                <td className="text-center"><button className="hidden md:flex px-5 py-2 rounded-lg bg-[#FBB72C] text-white">Process</button></td>
                             </tr>
                         </table>
                     </div>
