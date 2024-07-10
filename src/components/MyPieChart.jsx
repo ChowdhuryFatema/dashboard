@@ -14,7 +14,7 @@ const MyPieChart = () => {
             <PieChart width={400} height={200} className='mx-auto w-11/12'>
                 <Pie
                     data={data}
-                    
+
                     innerRadius={90}
                     outerRadius={110}
                     fill="#8884d8"
@@ -24,6 +24,7 @@ const MyPieChart = () => {
                     {data.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
+
                 </Pie>
                 <Legend />
                 <Tooltip />

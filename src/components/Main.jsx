@@ -7,6 +7,7 @@ import { RiErrorWarningFill } from "react-icons/ri";
 import { IoMdDocument } from "react-icons/io";
 import MyAreaChart from "./MyAreaChart";
 import MyPieChart from "./MyPieChart";
+import { PiGraduationCapThin } from "react-icons/pi";
 
 const Main = () => {
     return (
@@ -32,13 +33,11 @@ const Main = () => {
                                     <button className='btn rounded-full bg-gradient-to-r from-[#CB5088] to-[#EE5F7B] text-white font-bold px-5'>Last Month Summary</button>
                                 </div>
                             </div>
-
                             <div className="col-auto lg:col-span-4">
                                 <MyAreaChart></MyAreaChart>
                             </div>
                         </div>
                     </div>
-
                     <div className="p-5 py-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-2 space-y-5 md:space-y-0">
                         <div className="flex pt-3 gap-3">
                             <p className="bg-[#ED4A84] rounded-full flex justify-center size-14 items-center"><MdOutlineAccountBalanceWallet className="text-white text-7xl p-2" /></p>
@@ -70,12 +69,13 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-auto lg:col-span-1 bg-white rounded-lg flex justify-center'>
+                <div className='col-auto lg:col-span-1 bg-white rounded-lg flex justify-center relative'>
                     <MyPieChart></MyPieChart>
+                    <div className="absolute top-[39%] left-[50%] -translate-x-[50%] bg-[#60CDF6] rounded-full w-20 h-20 flex justify-center items-center">
+                        <PiGraduationCapThin className='text-5xl text-white' />
+                    </div>
                 </div>
-
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-5">
                 <div className="bg-gradient-to-r from-[#E3498B] to-[#C64F9A] *:text-white p-5 rounded-lg">
                     <h3>Revinue Status</h3>
@@ -104,10 +104,8 @@ const Main = () => {
                 <div className="bg-gradient-to-r from-[#4DB9EC] to-[#5AA2E1] *:text-white p-5 rounded-lg">
                     <h3>Revinue Status</h3>
                     <div className="flex justify-between items-center gap-2 py-3">
-
                         <div>
                             <h4 className="text-4xl font-semibold">$ 432</h4>
-
                         </div>
                         <div>
                             <img src={icon3} alt="" />
@@ -127,11 +125,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-
             <div className='grid grid-cols-1 lg:grid-cols-8 gap-5 m-5'>
-
-
-
                 <div className='col-auto lg:col-span-3 bg-white p-5 rounded-lg'>
                     <div>
                         <h2 className="font-bold text-xl mb-8">Recent Activities</h2>
@@ -180,8 +174,6 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-
-
                 <div className='col-auto lg:col-span-5 bg-white rounded-lg p-5'>
                     <div className="mb-8 space-y-2">
                         <h2 className="font-bold text-xl">Order Status</h2>
@@ -246,8 +238,6 @@ const Main = () => {
                         </table>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );
